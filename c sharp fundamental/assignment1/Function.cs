@@ -1,4 +1,4 @@
-namespace assignment1
+namespace Assignment1
 {
     public class Function
     {
