@@ -52,22 +52,55 @@ namespace Assignment1
         public static void ListDateOfBirth(List<Member> liststudent)
         {
             Console.WriteLine("4. List of Member with date of birth comparison: ");
-
-            foreach (Member student in liststudent)
+            Console.WriteLine(" a. Student who born in 2000: (press 1) \n b. Student who born less than 2000: (press 2) \n" +
+            " c. Student who born greater than 2000: (press 3) \n d. End the program (Press other numbers)");
+            int choice = 0;
+            do
             {
-                switch (student.dateOfBirth.Year)
+                choice = Convert.ToInt32(Console.ReadLine());
+                switch (choice)
                 {
-                    case 2000:
-                        Console.WriteLine(student.ToString() + " -> this person was born in the year 2000.");
-                        break;
-                    case < 2000:
-                        Console.WriteLine(student.ToString() + " -> this person was born before 2000.");
-                        break;
-                    case > 2000:
-                        Console.WriteLine(student.ToString() + " -> this person was born after 2000.");
-                        break;
+                    case 1:
+                        {
+                            Console.WriteLine("a. Student who born in 2000:");
+                            foreach (Member member in liststudent)
+                            {
+                                if (member.dateOfBirth.Year == 2000)
+                                {
+                                    Console.WriteLine(member.ToString());
+                                }
+                            }
+                            break;
+                        }
+                    case 2:
+                        {
+                            Console.WriteLine("b. Student who born less than 2000:");
+                            foreach (Member member in liststudent)
+                            {
+                                if (member.dateOfBirth.Year < 2000)
+                                {
+                                    Console.WriteLine(member.ToString());
+                                }
+                            }
+                            break;
+                        }
+                    case 3:
+                        {
+                            Console.WriteLine("c. Student who born greater than 2000:");
+                            foreach (Member member in liststudent)
+                            {
+                                if (member.dateOfBirth.Year > 2000)
+                                {
+                                    Console.WriteLine(member.ToString());
+                                }
+                            }
+                            break;
+                        }
+
                 }
-            }
+            } while (choice >= 1 && choice <= 3);
+
+            Console.ReadKey();
 
             Console.WriteLine("------------------------------------------");
         }
