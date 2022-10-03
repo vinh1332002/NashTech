@@ -2,25 +2,25 @@ namespace Assignment1
 {
     public class Member
     {
-        public string? fname { get; set; } //First Name
-        public string? lname { get; set; } //Last Name
+        public string? fName { get; set; } //First Name
+        public string? lName { get; set; } //Last Name
         public string? gender { get; set; } //Gender
-        public DateTime date_of_birth { get; set; } //= new DateTime(2022, 9, 30); //date of birth
-        public string? phone_number { get; set; } //phone number
-        public string? birth_place { get; set; }// birth place
+        public DateTime dateOfBirth { get; set; } //= new DateTime(2022, 9, 30); //date of birth
+        public string? phoneNumber { get; set; } //phone number
+        public string? birthPlace { get; set; }// birth place
         public uint age
         {
             get
             {
-                return (uint)(DateTime.Now.Year - date_of_birth.Year);
+                return (uint)(DateTime.Now.Year - dateOfBirth.Year);
             }
         } //age
-        public bool is_graduated { get; set; }// is graduated or not, true/false
-        public string? graduated_string //print out is graduated or is not graduated
+        public bool isGraduated { get; set; }// is graduated or not, true/false
+        public string? graduatedString //print out is graduated or is not graduated
         {
             get
             {
-                if (is_graduated == true)
+                if (isGraduated == true)
                 {
                     return "Is Graduated";
                 }
@@ -33,11 +33,11 @@ namespace Assignment1
 
         public override string ToString()
         {
-            return fname + ", " + lname + ", " + gender + ", " + date_of_birth + ", " + phone_number + ", " + birth_place + ", " + age + ", " + graduated_string + ".";
+            return fName + ", " + lName + ", " + gender + ", " + dateOfBirth + ", " + phoneNumber + ", " + birthPlace + ", " + age + ", " + graduatedString + ".";
         }
         public string GetFullName()
         {
-            return fname + " " + lname + ", " + gender + ", " + date_of_birth + ", " + phone_number + ", " + birth_place + ", " + age + ", " + graduated_string + ".";
+            return fName + " " + lName + ", " + gender + ", " + dateOfBirth + ", " + phoneNumber + ", " + birthPlace + ", " + age + ", " + graduatedString + ".";
         }
     }
 }
