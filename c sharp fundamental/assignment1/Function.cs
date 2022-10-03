@@ -55,7 +55,7 @@ namespace Assignment1
 
             foreach (Member student in liststudent)
             {
-                switch (student.date_of_birth.Year)
+                switch (student.dateOfBirth.Year)
                 {
                     case 2000:
                         Console.WriteLine(student.ToString() + " -> this person was born in the year 2000.");
@@ -77,7 +77,7 @@ namespace Assignment1
 
             int bornHaNoi = 0;
 
-            while (liststudent[bornHaNoi].birth_place.ToLower() != "ha noi")
+            while (liststudent[bornHaNoi].birthPlace.ToLower() != "ha noi")
             {
                 bornHaNoi++;
             }
