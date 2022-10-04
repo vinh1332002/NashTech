@@ -2,22 +2,25 @@ namespace Assignment2
 {
     public class Function
     {
-        public static void ListMale(List<Member> liststudent)
+        public static void GetListMale(List<Member> listStudent)
         {
             Console.WriteLine("1. Member that are male in the list: ");
-            IEnumerable<Member> maleStudent = liststudent.Where(s => s.gender == "Male");
+            IEnumerable<Member> maleStudent =
+                listStudent.Where(s => s.Gender == "Male");
             foreach (Member member in maleStudent)
             {
                 Console.WriteLine(member.ToString());
             }
             Console.WriteLine("------------------------------------------");
         }
-        public static void OldestMember(List<Member> liststudent)
+
+        public static void GetOldestMember(List<Member> listStudent)
         {
             Console.WriteLine("2. Oldest Member in the list: ");
 
-            uint ageStudent = liststudent.Max(s => s.age);
-            IEnumerable<Member> age_full_detail = liststudent.Where(s => s.age == ageStudent);
+            uint ageStudent = listStudent.Max(s => s.Age);
+            IEnumerable<Member> age_full_detail =
+                listStudent.Where(s => s.Age == ageStudent);
 
             foreach (Member member in age_full_detail)
             {
@@ -27,22 +30,29 @@ namespace Assignment2
 
             Console.WriteLine("------------------------------------------");
         }
-        public static void ListFullName(List<Member> liststudent)
+
+        public static void GetListFullName(List<Member> listStudent)
         {
             Console.WriteLine("3. List of Member with fullname: ");
+            var listFullName =
+                from member in listStudent
+                select member.FName + " " + member.LName;
 
-            foreach (Member student in liststudent)
+            foreach (var member in listFullName)
             {
-                Console.WriteLine(student.GetFullName());
+                Console.WriteLine (member);
             }
 
             Console.WriteLine("------------------------------------------");
         }
-        public static void ListDateOfBirth(List<Member> liststudent)
+
+        public static void GetListDateOfBirth(List<Member> listStudent)
         {
-            Console.WriteLine("4. List of Member with date of birth comparison: ");
-            Console.WriteLine(" a. Student who born in 2000: (press 1) \n b. Student who born less than 2000: (press 2) \n" + 
-            " c. Student who born greater than 2000: (press 3) \n d. End the program (Press other numbers)");
+            Console
+                .WriteLine("4. List of Member with date of birth comparison: ");
+            Console
+                .WriteLine(" a. Student who born in 2000: (press 1) \n b. Student who born less than 2000: (press 2) \n" +
+                " c. Student who born greater than 2000: (press 3) \n d. End the program (Press other numbers)");
             int choice = 0;
             do
             {
@@ -52,8 +62,13 @@ namespace Assignment2
                     case 1:
                         {
                             Console.WriteLine("a. Student who born in 2000:");
-                            IEnumerable<Member> is2000 = liststudent.Where(s => s.dateOfBirth.Year == 2000);
-                            foreach (Member member in is2000)
+
+                            var is2000 =
+                                from member in listStudent
+                                where member.DateOfBirth.Year == 2000
+                                select member;
+
+                            foreach (var member in is2000)
                             {
                                 Console.WriteLine(member.ToString());
                             }
@@ -61,8 +76,11 @@ namespace Assignment2
                         }
                     case 2:
                         {
-                            Console.WriteLine("b. Student who born less than 2000:");
-                            IEnumerable<Member> below2000 = liststudent.Where(s => s.dateOfBirth.Year < 2000);
+                            Console
+                                .WriteLine("b. Student who born less than 2000:");
+                            IEnumerable<Member> below2000 =
+                                listStudent
+                                    .Where(s => s.DateOfBirth.Year < 2000);
                             foreach (Member member in below2000)
                             {
                                 Console.WriteLine(member.ToString());
@@ -71,33 +89,40 @@ namespace Assignment2
                         }
                     case 3:
                         {
-                            Console.WriteLine("c. Student who born greater than 2000:");
-                            IEnumerable<Member> above2000 = liststudent.Where(s => s.dateOfBirth.Year > 2000);
+                            Console
+                                .WriteLine("c. Student who born greater than 2000:");
+                            IEnumerable<Member> above2000 =
+                                listStudent
+                                    .Where(s => s.DateOfBirth.Year > 2000);
                             foreach (Member member in above2000)
                             {
                                 Console.WriteLine(member.ToString());
                             }
                             break;
                         }
-                    
                 }
-            } while (choice >= 1 && choice <= 3);
+            }
+            while (choice >= 1 && choice <= 3);
 
             Console.ReadKey();
 
             Console.WriteLine("------------------------------------------");
         }
-        public static void FirstBornHaNoi(List<Member> liststudent)
+
+        public static void GetFirstBornHaNoi(List<Member> listStudent)
         {
             Console.WriteLine("5. The first person who was born in Ha Noi: ");
 
-            IEnumerable<Member> bornhanoi = liststudent.Where(s => s.birthPlace.ToLower() == "ha noi");
-            foreach (Member member in bornhanoi)
-            {
-                Console.WriteLine(member.ToString());
-                break;
-            }
+            var bornHaNoi =
+                (
+                from member in listStudent
+                where member.BirthPlace.ToLower() == "ha noi" select member
+                ).FirstOrDefault();
 
+            if (bornHaNoi != null)
+            {
+                Console.WriteLine(bornHaNoi.ToString());
+            }
             Console.WriteLine("------------------------------------------");
         }
     }
