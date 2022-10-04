@@ -2,25 +2,33 @@ namespace Assignment2
 {
     public class Member
     {
-        public string? fName { get; set; } //First Name
-        public string? lName { get; set; } //Last Name
-        public string? gender { get; set; } //Gender
-        public DateTime dateOfBirth { get; set; } //= new DateTime(2022, 9, 30); //date of birth
-        public string? phoneNumber { get; set; } //phone number
-        public string? birthPlace { get; set; }// birth place
-        public uint age
+        public string? FName { get; set; }
+
+        public string? LName { get; set; }
+
+        public string? Gender { get; set; }
+
+        public DateTime DateOfBirth { get; set; }
+
+        public string? PhoneNumber { get; set; }
+
+        public string? BirthPlace { get; set; }
+
+        public uint Age
         {
             get
             {
-                return (uint)(DateTime.Now.Year - dateOfBirth.Year);
+                return (uint)(DateTime.Now.Year - DateOfBirth.Year);
             }
-        } //age
-        public bool isGraduated { get; set; }// is graduated or not, true/false
-        public string? graduatedString //print out is graduated or is not graduated
+        }
+
+        public bool IsGraduated { get; set; }
+
+        public string? GraduatedString
         {
             get
             {
-                if (isGraduated == true)
+                if (IsGraduated == true)
                 {
                     return "Is Graduated";
                 }
@@ -33,11 +41,22 @@ namespace Assignment2
 
         public override string ToString()
         {
-            return fName + ", " + lName + ", " + gender + ", " + dateOfBirth + ", " + phoneNumber + ", " + birthPlace + ", " + age + ", " + graduatedString + ".";
-        }
-        public string GetFullName()
-        {
-            return fName + " " + lName + ", " + gender + ", " + dateOfBirth + ", " + phoneNumber + ", " + birthPlace + ", " + age + ", " + graduatedString + ".";
+            return FName +
+            ", " +
+            LName +
+            ", " +
+            Gender +
+            ", " +
+            DateOfBirth +
+            ", " +
+            PhoneNumber +
+            ", " +
+            BirthPlace +
+            ", " +
+            Age +
+            ", " +
+            GraduatedString +
+            ".";
         }
     }
 }
