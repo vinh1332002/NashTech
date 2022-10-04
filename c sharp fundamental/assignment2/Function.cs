@@ -19,10 +19,10 @@ namespace Assignment2
             Console.WriteLine("2. Oldest Member in the list: ");
 
             uint ageStudent = listStudent.Max(s => s.Age);
-            IEnumerable<Member> age_full_detail =
+            IEnumerable<Member> ageFullDetail =
                 listStudent.Where(s => s.Age == ageStudent);
 
-            foreach (Member member in age_full_detail)
+            foreach (Member member in ageFullDetail)
             {
                 Console.WriteLine(member.ToString());
                 break;
