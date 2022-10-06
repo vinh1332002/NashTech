@@ -14,6 +14,7 @@
 
             Console.ReadKey();
         }
+        
         static async Task GetPrimeNumber(int startNumber, int endNumber)
         {
             await Task.Run(() =>
