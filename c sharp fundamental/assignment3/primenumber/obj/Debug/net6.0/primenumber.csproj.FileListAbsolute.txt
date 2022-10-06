@@ -1,0 +1,15 @@
+D:\FILE_NAY_CHUA_JAV_VIDEO_4GB\NashTech\material\week2day3\assignment3\primenumber\bin\Debug\net6.0\primenumber.exe
+D:\FILE_NAY_CHUA_JAV_VIDEO_4GB\NashTech\material\week2day3\assignment3\primenumber\bin\Debug\net6.0\primenumber.deps.json
+D:\FILE_NAY_CHUA_JAV_VIDEO_4GB\NashTech\material\week2day3\assignment3\primenumber\bin\Debug\net6.0\primenumber.runtimeconfig.json
+D:\FILE_NAY_CHUA_JAV_VIDEO_4GB\NashTech\material\week2day3\assignment3\primenumber\bin\Debug\net6.0\primenumber.dll
+D:\FILE_NAY_CHUA_JAV_VIDEO_4GB\NashTech\material\week2day3\assignment3\primenumber\bin\Debug\net6.0\primenumber.pdb
+D:\FILE_NAY_CHUA_JAV_VIDEO_4GB\NashTech\material\week2day3\assignment3\primenumber\obj\Debug\net6.0\primenumber.csproj.AssemblyReference.cache
+D:\FILE_NAY_CHUA_JAV_VIDEO_4GB\NashTech\material\week2day3\assignment3\primenumber\obj\Debug\net6.0\primenumber.GeneratedMSBuildEditorConfig.editorconfig
+D:\FILE_NAY_CHUA_JAV_VIDEO_4GB\NashTech\material\week2day3\assignment3\primenumber\obj\Debug\net6.0\primenumber.AssemblyInfoInputs.cache
+D:\FILE_NAY_CHUA_JAV_VIDEO_4GB\NashTech\material\week2day3\assignment3\primenumber\obj\Debug\net6.0\primenumber.AssemblyInfo.cs
+D:\FILE_NAY_CHUA_JAV_VIDEO_4GB\NashTech\material\week2day3\assignment3\primenumber\obj\Debug\net6.0\primenumber.csproj.CoreCompileInputs.cache
+D:\FILE_NAY_CHUA_JAV_VIDEO_4GB\NashTech\material\week2day3\assignment3\primenumber\obj\Debug\net6.0\primenumber.dll
+D:\FILE_NAY_CHUA_JAV_VIDEO_4GB\NashTech\material\week2day3\assignment3\primenumber\obj\Debug\net6.0\refint\primenumber.dll
+D:\FILE_NAY_CHUA_JAV_VIDEO_4GB\NashTech\material\week2day3\assignment3\primenumber\obj\Debug\net6.0\primenumber.pdb
+D:\FILE_NAY_CHUA_JAV_VIDEO_4GB\NashTech\material\week2day3\assignment3\primenumber\obj\Debug\net6.0\primenumber.genruntimeconfig.cache
+D:\FILE_NAY_CHUA_JAV_VIDEO_4GB\NashTech\material\week2day3\assignment3\primenumber\obj\Debug\net6.0\ref\primenumber.dll
