@@ -24,7 +24,6 @@ namespace assignment1.Middlewares
 
             Debug.Write(requestInfo);
 
-            //File.WriteAllText("D:\\FILE_NAY_CHUA_JAV_VIDEO_4GB\\NashTech\\material\\week2day5\\assignment_1\\assignment1\\text.txt", requestInfo);
             WriteFileStream("D:\\FILE_NAY_CHUA_JAV_VIDEO_4GB\\NashTech\\material\\week2day5\\assignment_1\\assignment1", "text.txt", requestInfo);
 
             await _next(context);
