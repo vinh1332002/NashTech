@@ -1,1 +1,1 @@
-Đây là bài assignment 1 của ASP .Net Core MVC
+Đây là những bài assignment của ASP .Net Core MVC
