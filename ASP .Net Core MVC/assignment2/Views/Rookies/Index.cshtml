@@ -1,0 +1,71 @@
+@model IList<assignment2.Models.PersonModel>
+
+@{
+    ViewData["Title"] = "Rookie Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome ! This is the Rookie List</h1>
+    <div class="text-start mt=2 mb=4">
+        <a class="btn btn-success btn-sm" role="button" asp-action="Create">Create New Person</a>
+    </div>
+    <table class="table table-dark table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Date Of Birth</th>
+                <th scope="col">Gender</th>
+                <th scope="col">Birth Place</th>
+                <th scope="col">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (int i = 0; i < Model.Count(); i++)
+            {
+                var person = Model[i];
+                <tr>
+                    <th scope="row">@(i + 1)</th>
+                    <td>@person.FirstName</td>
+                    <td>@person.LastName</td>
+                    <td>@person.DateOfBirth.ToString("dd/MM/yyyy")</td>
+                    <td>@person.Gender</td>
+                    <td>@person.BirthPlace</td>
+                    <td>
+                        <a role="button" class="btn btn-primary btn-sm" asp-controller="Rookies" asp-action="Edit"
+                        asp-route-index="@i">Edit</a>
+                        <a role="button" class="btn btn-danger btn-sm" href="#" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal_@i">Delete</a>
+
+                        <!-- Modal -->
+                    <div class="modal fade" id="exampleModal_@i" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <form asp-controller="Rookies" asp-action="Delete" asp-route-index="@i" method="post"
+                                    class="col-8 offset-2">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-6 text-dark" id="exampleModalLabel">Delete
+                                                Confirmation</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body" class="text-dark">
+                                            <h2 class="text-dark fs-6"> Are you sure you want to delete ? </h2>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                            <button type="submit" class="btn btn-primary">Confirm</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
