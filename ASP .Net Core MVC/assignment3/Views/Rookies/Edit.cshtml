@@ -1,0 +1,44 @@
+@model PersonEditModel
+
+@{
+    ViewData["Title"] = "Update person info";
+    var value = ViewData["Index"]?.ToString() ?? "";
+    var index = !string.IsNullOrEmpty(value) ? int.Parse(value) : 0;
+}
+
+<div class="">
+    <h1 class="display-4 text-center">Update person info</h1>
+    <div class="row">
+        <form asp-controller="Rookies" asp-action="Update" asp-route-index="@index" method="post"
+            class="col-4 offset-4">
+            <div class="form-group">
+                <label asp-for="FirstName"></label>
+                <input asp-for="FirstName" type="text" class="form-control" id="exampleInputEmail1"
+                    placeholder="Your first name">
+                <span asp-validation-for="FirstName" class="form-text text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LastName"></label>
+                <input asp-for="LastName" type="text" class="form-control" id="exampleInputEmail1"
+                    placeholder="Your last name">
+                <span asp-validation-for="LastName" class="form-text text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PhoneNumber"></label>
+                <input asp-for="PhoneNumber" type="text" class="form-control" id="exampleInputEmail1"
+                    placeholder="Your phone number">
+                <span asp-validation-for="PhoneNumber" class="form-text text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BirthPlace"></label>
+                <input asp-for="BirthPlace" type="text" class="form-control" id="exampleInputEmail1"
+                    placeholder="Your birth place">
+                <span asp-validation-for="BirthPlace" class="form-text text-danger"></span>
+            </div>
+            <div class="form-group mt-4">
+                <button class="btn btn-success btn-sm" type="submit">Submit</button>
+                <a class="btn btn-danger btn-sm" role="button" asp-controller="Rookies" asp-action="Index">Cancel</a>
+            </div>
+        </form>
+    </div>
+</div>
