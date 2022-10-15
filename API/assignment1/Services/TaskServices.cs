@@ -100,5 +100,16 @@ namespace assignment1.Services
 
             return persons;
         }
+
+        // public void DeleteGuid(Guid index)
+        // {
+        //     var data = _person.FirstOrDefault(i => i.UniqueId == index);
+        //     if (data != null) { _person.Remove(data); }
+        // }
+
+        public void DeleteMulti(List<Guid> indexes)
+        {
+            _person.RemoveAll(i => indexes.Contains(i.UniqueId));
+        }
     }
 }

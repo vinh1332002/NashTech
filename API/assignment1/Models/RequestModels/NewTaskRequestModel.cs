@@ -4,6 +4,8 @@ namespace assignment1.Models.RequestModels
 {
     public class NewTaskRequestModel
     {
+        public Guid UniqueId { get; set; }
+
         [Required]
         [MinLength(2)]
         [MaxLength(15)]

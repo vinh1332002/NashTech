@@ -15,5 +15,7 @@ namespace assignment1.Services
         NewTaskRequestModel? Delete(int index);
 
         List<NewTaskRequestModel> AddList(List<NewTaskRequestModel> persons);
+
+        public void DeleteMulti(List<Guid> indexes);
     }
 }

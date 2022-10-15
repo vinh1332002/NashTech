@@ -17,46 +17,11 @@ namespace assignment1.Controllers
             _taskServices = taskServices;
         }
 
-        [HttpPost("v1-new")]
-        public int CreateANewTask([FromBody] NewTaskRequestModel requestModel)
-        {
-            var newID = 1;
-            return newID;
-        }
-
-        [HttpPost("v2-new")]
-        public IActionResult CreateANewTaskV2([FromBody] NewTaskRequestModel requestModel)
-        {
-            if (string.IsNullOrWhiteSpace(requestModel.Title))
-            {
-                return BadRequest("some message");
-            }
-            requestModel.Title = requestModel.Title.Trim();
-            if (requestModel.Title.Length < 2 || requestModel.Title.Length > 15) return BadRequest("some message");
-
-            try
-            {
-                var newID = 1;
-
-                return Ok(newID);
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, "some message: " + ex);
-            }
-        }
         [HttpGet("GetAll")]
 
-        public IEnumerable<NewTaskRequestModel> GetAll()
+        public List<NewTaskRequestModel> GetAll()
         {
-            var data = _taskServices.GetAll();
-
-            return from item in data
-                   select new NewTaskRequestModel
-                   {
-                       Title = item.Title,
-                       IsCompleted = item.IsCompleted
-                   };
+            return _taskServices.GetAll();
         }
 
         [HttpGet("GetOne")]
@@ -105,7 +70,7 @@ namespace assignment1.Controllers
                 {
                     return BadRequest("some message");
                 };
-
+                data.UniqueId = model.UniqueId;
                 data.Title = model.Title;
                 data.IsCompleted = model.IsCompleted;
 
@@ -142,7 +107,7 @@ namespace assignment1.Controllers
 
         [HttpPost("Add")]
 
-        public IActionResult Add(NewTaskRequestModel model)
+        public IActionResult Add([FromBody] NewTaskRequestModel model)
         {
             if (!ModelState.IsValid) return BadRequest();
 
@@ -150,6 +115,7 @@ namespace assignment1.Controllers
             {
                 var data = new NewTaskRequestModel
                 {
+                    UniqueId = Guid.NewGuid(),
                     Title = model.Title,
                     IsCompleted = model.IsCompleted
                 };
@@ -187,6 +153,12 @@ namespace assignment1.Controllers
                 return StatusCode(500, "some message: " + ex);
             }
         }
-        //Em vẫn chưa tìm đc cách làm bài 7 kịp ạ, em vẫn nộp cho đúng hạn ạ
+
+        [HttpPost("DeleteMultiple")]
+        public IActionResult DeleteMultiple(List<Guid> indexes)
+        {
+            _taskServices.DeleteMulti(indexes);
+            return Ok();
+        }
     }
 }
