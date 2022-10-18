@@ -1,5 +1,5 @@
 {
-  "FilePath": "d:\\FILE_NAY_CHUA_JAV_VIDEO_4GB\\NashTech\\material\\week3day2\\git\\NashTech\\ASP .Net Core MVC\\assignment2\\assignment2.csproj",
+  "FilePath": "d:\\FILE_NAY_CHUA_JAV_VIDEO_4GB\\NashTech\\material\\week3day2\\git\\NashTech\\API\\assignment2\\assignment2.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "6.0",
@@ -16296,57 +16296,6 @@
     "CSharpLanguageVersion": 1000
   },
   "RootNamespace": "assignment2",
-  "Documents": [
-    {
-      "FilePath": "d:\\FILE_NAY_CHUA_JAV_VIDEO_4GB\\NashTech\\material\\week3day2\\git\\NashTech\\ASP .Net Core MVC\\assignment2\\Views\\Rookies\\Index.cshtml",
-      "TargetPath": "Views\\Rookies\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\FILE_NAY_CHUA_JAV_VIDEO_4GB\\NashTech\\material\\week3day2\\git\\NashTech\\ASP .Net Core MVC\\assignment2\\Views\\Shared\\_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\FILE_NAY_CHUA_JAV_VIDEO_4GB\\NashTech\\material\\week3day2\\git\\NashTech\\ASP .Net Core MVC\\assignment2\\Views\\_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\FILE_NAY_CHUA_JAV_VIDEO_4GB\\NashTech\\material\\week3day2\\git\\NashTech\\ASP .Net Core MVC\\assignment2\\Views\\Rookies\\Edit.cshtml",
-      "TargetPath": "Views\\Rookies\\Edit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\FILE_NAY_CHUA_JAV_VIDEO_4GB\\NashTech\\material\\week3day2\\git\\NashTech\\ASP .Net Core MVC\\assignment2\\Views\\Shared\\Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\FILE_NAY_CHUA_JAV_VIDEO_4GB\\NashTech\\material\\week3day2\\git\\NashTech\\ASP .Net Core MVC\\assignment2\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\FILE_NAY_CHUA_JAV_VIDEO_4GB\\NashTech\\material\\week3day2\\git\\NashTech\\ASP .Net Core MVC\\assignment2\\Views\\Home\\Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\FILE_NAY_CHUA_JAV_VIDEO_4GB\\NashTech\\material\\week3day2\\git\\NashTech\\ASP .Net Core MVC\\assignment2\\Views\\_ViewImports.cshtml",
-      "TargetPath": "Views\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\FILE_NAY_CHUA_JAV_VIDEO_4GB\\NashTech\\material\\week3day2\\git\\NashTech\\ASP .Net Core MVC\\assignment2\\Views\\Rookies\\Create.cshtml",
-      "TargetPath": "Views\\Rookies\\Create.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\FILE_NAY_CHUA_JAV_VIDEO_4GB\\NashTech\\material\\week3day2\\git\\NashTech\\ASP .Net Core MVC\\assignment2\\Views\\Home\\Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
-      "FileKind": "mvc"
-    }
-  ],
+  "Documents": [],
   "SerializationFormat": "0.2"
 }
