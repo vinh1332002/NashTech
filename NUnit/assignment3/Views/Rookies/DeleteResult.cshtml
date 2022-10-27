@@ -1,0 +1,7 @@
+@inject IHttpContextAccessor HttpContextAccessor
+
+@{
+    ViewData["Title"] = "Delete result";
+    var deletedPerson = HttpContextAccessor?.HttpContext?.Session.GetString("DeletedPersonName") ?? "[unknown person]";
+}
+<h1 class="display-6 text-center text-info">Person @deletedPerson is removed susscessfully</h1>
