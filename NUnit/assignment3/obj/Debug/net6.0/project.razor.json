@@ -16350,4 +16350,13 @@
     {
       "FilePath": "d:\\FILE_NAY_CHUA_JAV_VIDEO_4GB\\NashTech\\material\\week3day2\\git\\NashTech\\NUnit\\assignment3\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
-      "FileKind
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\FILE_NAY_CHUA_JAV_VIDEO_4GB\\NashTech\\material\\week3day2\\git\\NashTech\\NUnit\\assignment3\\Views\\Shared\\Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
+  "SerializationFormat": "0.2"
+}
