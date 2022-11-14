@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bHv9J89Ca50o4JPSCttCzeWj4bLPb3+T/n3qLUE1J58RT6Yp338Bnr8IMI0ir0ig4UPlkLmzt+SAKzkVPyrxZg==",
+  "dgSpecHash": "uHgE3HBJKHT8hX2UcTD1+TQ2bfxCkmPsLLlHdUmvzCLrA7umYe8PmnFTyfFpsfsuPsfCkOkaMWlb7STgOSt4dw==",
   "success": true,
-  "projectFilePath": "D:\\FILE_NAY_CHUA_JAV_VIDEO_4GB\\NashTech\\material\\week6day4\\react\\react-assignment\\src\\server\\assignment2.csproj",
+  "projectFilePath": "D:\\FILE_NAY_CHUA_JAV_VIDEO_4GB\\NashTech\\material\\week3day2\\git\\NashTech\\react-assignment\\src\\server\\assignment2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
